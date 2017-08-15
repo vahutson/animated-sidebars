@@ -84,6 +84,8 @@ i.fa-outdent {
   transition: 0.2s;
 
   &.collapsed {
+    padding-left: 50px;
+    letter-spacing: 70px;
     width: 8.8%;
   }
 
@@ -101,6 +103,31 @@ i.fa-outdent {
 
   &.collapsed {
     width: 8.8%;
+
+    .nav__items {
+      padding-left: 5px;
+
+      .list__name {
+        i {
+          padding-right: 65px;
+        }
+      }
+    }
+
+    .general {
+      display: none;
+    }
+    .user__content {
+      display: block;
+      width: 580px;
+
+      .user__info {
+        opacity: 0;
+        transform: translateX(90px);
+
+      }
+    }
+
   }
 
   .user__wrapper {
@@ -115,12 +142,10 @@ i.fa-outdent {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a878c', endColorstr='#776b91', GradientType=0);
 
     .user__content {
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      padding: 40px 20px 40px 30px;
+      padding: 40px 0 40px 30px;
 
       .user__pic {
+        display: inline-block;
         width: 62px;
         height: 62px;
         border-radius: 50%;
@@ -128,10 +153,15 @@ i.fa-outdent {
       }
 
       .user__info {
+        display: inline-block;
+        position: absolute;
+        top: 48px;
+        left: 92px;
         color: white;
         font-size: 20px;
         margin-left: 20px;
-
+        transition: 0.5s;
+        white-space: nowrap;
         .user__name {
           margin-bottom: 5px;
         }
@@ -156,15 +186,19 @@ i.fa-outdent {
   .nav__items {
     color: white;
     line-height: 70px;
+    transition: 0.5s;
 
     i {
       font-size: 24px;
       padding-right: 8px;
+      transition: 0.5s;
     }
 
     .list__name {
       height: 70px;
       padding-left: 40px;
+      white-space: nowrap;
+      overflow: hidden;
     }
     .list__dash {
       height: 60px;
@@ -193,6 +227,7 @@ i.fa-outdent {
         padding: 0 2px 0 84px;
         font-size: 18px;
         line-height: 44px;
+        overflow: hidden;
 
         i {
           font-size: 18px;

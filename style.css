@@ -64,6 +64,8 @@ i.fa-outdent {
   display: inline-block;
   transition: 0.2s; }
   .company__title.collapsed {
+    padding-left: 50px;
+    letter-spacing: 70px;
     width: 8.8%; }
 
 .company__title:first-letter {
@@ -76,6 +78,18 @@ i.fa-outdent {
   transition: 0.2s; }
   .sidebar.collapsed {
     width: 8.8%; }
+    .sidebar.collapsed .nav__items {
+      padding-left: 5px; }
+      .sidebar.collapsed .nav__items .list__name i {
+        padding-right: 65px; }
+    .sidebar.collapsed .general {
+      display: none; }
+    .sidebar.collapsed .user__content {
+      display: block;
+      width: 580px; }
+      .sidebar.collapsed .user__content .user__info {
+        opacity: 0;
+        transform: translateX(90px); }
   .sidebar .user__wrapper {
     height: 142px;
     background: #4a878c;
@@ -87,19 +101,23 @@ i.fa-outdent {
     background: linear-gradient(to bottom, #4a878c 0%, #776b91 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a878c', endColorstr='#776b91', GradientType=0); }
     .sidebar .user__wrapper .user__content {
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      padding: 40px 20px 40px 30px; }
+      padding: 40px 0 40px 30px; }
       .sidebar .user__wrapper .user__content .user__pic {
+        display: inline-block;
         width: 62px;
         height: 62px;
         border-radius: 50%;
         background: url("img/user__pic.png"); }
       .sidebar .user__wrapper .user__content .user__info {
+        display: inline-block;
+        position: absolute;
+        top: 48px;
+        left: 92px;
         color: white;
         font-size: 20px;
-        margin-left: 20px; }
+        margin-left: 20px;
+        transition: 0.5s;
+        white-space: nowrap; }
         .sidebar .user__wrapper .user__content .user__info .user__name {
           margin-bottom: 5px; }
         .sidebar .user__wrapper .user__content .user__info .user__company {
@@ -114,13 +132,17 @@ i.fa-outdent {
     line-height: 70px; }
   .sidebar .nav__items {
     color: white;
-    line-height: 70px; }
+    line-height: 70px;
+    transition: 0.5s; }
     .sidebar .nav__items i {
       font-size: 24px;
-      padding-right: 8px; }
+      padding-right: 8px;
+      transition: 0.5s; }
     .sidebar .nav__items .list__name {
       height: 70px;
-      padding-left: 40px; }
+      padding-left: 40px;
+      white-space: nowrap;
+      overflow: hidden; }
     .sidebar .nav__items .list__dash {
       height: 60px;
       overflow: hidden; }
@@ -138,7 +160,8 @@ i.fa-outdent {
         height: 45px;
         padding: 0 2px 0 84px;
         font-size: 18px;
-        line-height: 44px; }
+        line-height: 44px;
+        overflow: hidden; }
         .sidebar .nav__items .list__dash li i {
           font-size: 18px; }
           .sidebar .nav__items .list__dash li i.pink {
