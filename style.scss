@@ -104,11 +104,37 @@ i.fa-outdent {
   &.collapsed {
     width: 8.8%;
 
+    .dash__holder {
+      padding-left: 0px;
+      padding-right: 65px;
+
+      i {
+        padding-right: 55px;
+      }
+    }
+
     .nav__items {
-      padding-left: 5px;
+
+      .dashboards {
+
+        &.active {
+          height: 70px;
+        }
+
+        .dash__holder {
+
+          i {
+            padding-left: 40px;
+            padding-right: 110px;
+          }
+        }
+      }
 
       .list__name {
+        padding-left: 0;
+
         i {
+          padding-left: 40px;
           padding-right: 65px;
         }
       }
@@ -117,6 +143,7 @@ i.fa-outdent {
     .general {
       display: none;
     }
+
     .user__content {
       display: block;
       width: 580px;
@@ -124,10 +151,8 @@ i.fa-outdent {
       .user__info {
         opacity: 0;
         transform: translateX(90px);
-
       }
     }
-
   }
 
   .user__wrapper {
@@ -162,6 +187,7 @@ i.fa-outdent {
         margin-left: 20px;
         transition: 0.5s;
         white-space: nowrap;
+
         .user__name {
           margin-bottom: 5px;
         }
@@ -190,25 +216,26 @@ i.fa-outdent {
 
     i {
       font-size: 24px;
+      padding-left: 40px;
       padding-right: 8px;
       transition: 0.5s;
     }
 
     .list__name {
       height: 70px;
-      padding-left: 40px;
       white-space: nowrap;
       overflow: hidden;
     }
+
     .list__dash {
       height: 60px;
       overflow: hidden;
 
       .dash__holder {
-        padding-left: 40px;
+        white-space: nowrap;
 
         img {
-          padding-left: 100px;
+          padding-left: 70px;
         }
 
         i {
@@ -258,11 +285,10 @@ i.fa-outdent {
 
       &.active .dash__holder {
         border-left: 8px solid #46c1fa;
-        padding-left: 22px;
 
         i {
           font-size: 32px;
-          padding-right: 18px;
+          padding-right: 55px;
         }
       }
     }
@@ -323,7 +349,6 @@ main {
             width: 100%;
             height: 100%;
           }
-
         }
       }
     }
@@ -363,7 +388,6 @@ main {
         }
       }
     }
-
   }
 
   .table__column__titles {

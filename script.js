@@ -8,6 +8,8 @@ var companyTitle = document.getElementsByClassName('company__title')[0];
 var mainHeader = document.getElementsByClassName('main__header')[0];
 var cell = document.getElementsByClassName('cell');
 var main = document.getElementsByTagName('main')[0];
+var dashBoard = document.getElementsByClassName('dashboards')[0];
+dashBoard.addEventListener('click', activate);
 toggleButton.addEventListener('click', collapse);
 
 function collapse() {
@@ -19,4 +21,8 @@ function collapse() {
     for (var i = 0; i < cell.length; i++) {
         cell[i].classList.toggle('collapsed');
     }
+}
+
+function activate() {
+    dashBoard.classList.toggle('active');
 }

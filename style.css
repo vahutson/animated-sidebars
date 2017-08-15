@@ -78,9 +78,20 @@ i.fa-outdent {
   transition: 0.2s; }
   .sidebar.collapsed {
     width: 8.8%; }
-    .sidebar.collapsed .nav__items {
-      padding-left: 5px; }
+    .sidebar.collapsed .dash__holder {
+      padding-left: 0px;
+      padding-right: 65px; }
+      .sidebar.collapsed .dash__holder i {
+        padding-right: 55px; }
+    .sidebar.collapsed .nav__items .dashboards.active {
+      height: 70px; }
+    .sidebar.collapsed .nav__items .dashboards .dash__holder i {
+      padding-left: 40px;
+      padding-right: 110px; }
+    .sidebar.collapsed .nav__items .list__name {
+      padding-left: 0; }
       .sidebar.collapsed .nav__items .list__name i {
+        padding-left: 40px;
         padding-right: 65px; }
     .sidebar.collapsed .general {
       display: none; }
@@ -136,20 +147,20 @@ i.fa-outdent {
     transition: 0.5s; }
     .sidebar .nav__items i {
       font-size: 24px;
+      padding-left: 40px;
       padding-right: 8px;
       transition: 0.5s; }
     .sidebar .nav__items .list__name {
       height: 70px;
-      padding-left: 40px;
       white-space: nowrap;
       overflow: hidden; }
     .sidebar .nav__items .list__dash {
       height: 60px;
       overflow: hidden; }
       .sidebar .nav__items .list__dash .dash__holder {
-        padding-left: 40px; }
+        white-space: nowrap; }
         .sidebar .nav__items .list__dash .dash__holder img {
-          padding-left: 100px; }
+          padding-left: 70px; }
         .sidebar .nav__items .list__dash .dash__holder i {
           font-size: 24px;
           padding-right: 5px; }
@@ -177,11 +188,10 @@ i.fa-outdent {
         font-size: 14px;
         background-color: #486e91; }
       .sidebar .nav__items .list__dash.active .dash__holder {
-        border-left: 8px solid #46c1fa;
-        padding-left: 22px; }
+        border-left: 8px solid #46c1fa; }
         .sidebar .nav__items .list__dash.active .dash__holder i {
           font-size: 32px;
-          padding-right: 18px; }
+          padding-right: 55px; }
 
 main {
   width: 76.7%;
