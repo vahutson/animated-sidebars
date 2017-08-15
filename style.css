@@ -17,7 +17,11 @@ i.fa-outdent {
   font-size: 22px;
   top: 24px;
   left: 22%;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 0.2s; }
+  i.fa-outdent.collapsed {
+    left: 7.4%;
+    transform: rotateZ(180deg); }
 
 .main__header {
   display: inline-flex;
@@ -28,7 +32,10 @@ i.fa-outdent {
   height: 80px;
   padding: 0 8px 0 40px;
   color: white;
-  background: #4a868c; }
+  background: #4a868c;
+  transition: 0.2s; }
+  .main__header.collapsed {
+    width: 91.2%; }
   .main__header a {
     color: white; }
   .main__header .period__wrapper {
@@ -54,7 +61,10 @@ i.fa-outdent {
   height: 80px;
   width: 23.3%;
   background: #253340;
-  display: inline-block; }
+  display: inline-block;
+  transition: 0.2s; }
+  .company__title.collapsed {
+    width: 8.8%; }
 
 .company__title:first-letter {
   color: #ed553c; }
@@ -62,7 +72,10 @@ i.fa-outdent {
 .sidebar {
   position: absolute;
   width: 23.3%;
-  background: #253340; }
+  background: #253340;
+  transition: 0.2s; }
+  .sidebar.collapsed {
+    width: 8.8%; }
   .sidebar .user__wrapper {
     height: 142px;
     background: #4a878c;
@@ -152,6 +165,9 @@ main {
   margin-left: 23.3%;
   padding: 20px 20px 0 26px;
   display: inline-block; }
+  main.collapsed {
+    width: 91.2%;
+    margin-left: 8.8%; }
   main .table__header {
     height: 54px;
     margin-top: 4px;
@@ -202,6 +218,8 @@ main {
         color: #777777;
         font-size: 15px;
         text-align: center; }
+        main .table__wrapper .main__table .cell.collapsed {
+          padding: 30px 44px; }
         main .table__wrapper .main__table .cell:first-child {
           padding-left: 2px; }
         main .table__wrapper .main__table .cell:last-child {
@@ -215,7 +233,8 @@ main {
       padding: 15px 20px 20px 25px;
       border-bottom: 1px solid lightgrey;
       text-transform: uppercase;
-      font-size: 12px; }
+      font-size: 12px;
+      text-align: center; }
       main .table__column__titles .column__title:first-child {
         padding-left: 0; }
       main .table__column__titles .column__title:last-child {

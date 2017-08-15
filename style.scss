@@ -25,6 +25,12 @@ i.fa-outdent {
   top: 24px;
   left: 22%;
   cursor: pointer;
+  transition: 0.2s;
+
+  &.collapsed {
+    left: 7.4%;
+    transform: rotateZ(180deg);
+  }
 }
 
 .main__header {
@@ -37,6 +43,11 @@ i.fa-outdent {
   padding: 0 8px 0 40px;
   color: white;
   background: #4a868c;
+  transition: 0.2s;
+
+  &.collapsed {
+    width: 91.2%;
+  }
 
   a {
     color: white;
@@ -70,6 +81,12 @@ i.fa-outdent {
   width: 23.3%;
   background: #253340;
   display: inline-block;
+  transition: 0.2s;
+
+  &.collapsed {
+    width: 8.8%;
+  }
+
 }
 
 .company__title:first-letter {
@@ -80,6 +97,11 @@ i.fa-outdent {
   position: absolute;
   width: 23.3%;
   background: #253340;
+  transition: 0.2s;
+
+  &.collapsed {
+    width: 8.8%;
+  }
 
   .user__wrapper {
     height: 142px;
@@ -218,6 +240,11 @@ main {
   padding: 20px 20px 0 26px;
   display: inline-block;
 
+  &.collapsed {
+    width: 91.2%;
+    margin-left: 8.8%;
+  }
+
   .table__header {
     height: 54px;
     margin-top: 4px;
@@ -288,6 +315,10 @@ main {
         font-size: 15px;
         text-align: center;
 
+        &.collapsed {
+          padding: 30px 44px;
+        }
+
         &:first-child {
           padding-left: 2px;
         }
@@ -312,6 +343,7 @@ main {
       border-bottom: 1px solid lightgrey;
       text-transform: uppercase;
       font-size: 12px;
+      text-align: center;
 
       &:first-child {
         padding-left: 0;
