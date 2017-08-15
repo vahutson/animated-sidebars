@@ -1,3 +1,12 @@
+ul, li {
+  cursor: pointer; }
+
+.dash__holder:hover {
+  background-color: #4b6378; }
+
+li:hover {
+  background-color: #4b6378; }
+
 body {
   padding-top: 80px; }
 
@@ -56,15 +65,15 @@ i.fa-outdent {
   color: white;
   font-size: 34px;
   letter-spacing: 5px;
-  padding-top: 25px;
-  padding-left: 30px;
+  padding-top: 1.7%;
+  padding-left: 2.5%;
   height: 80px;
   width: 23.3%;
   background: #253340;
   display: inline-block;
   transition: 0.2s; }
   .company__title.collapsed {
-    padding-left: 50px;
+    padding-left: 3.5%;
     letter-spacing: 70px;
     width: 8.8%; }
 
@@ -79,23 +88,29 @@ i.fa-outdent {
   .sidebar.collapsed {
     width: 8.8%; }
     .sidebar.collapsed .dash__holder {
-      padding-left: 0px;
+      padding-left: 0;
       padding-right: 65px; }
       .sidebar.collapsed .dash__holder i {
         padding-right: 55px; }
     .sidebar.collapsed .nav__items .dashboards.active {
       height: 70px; }
+      .sidebar.collapsed .nav__items .dashboards.active i {
+        font-size: 32px;
+        padding-left: 76%;
+        padding-top: 36%;
+        padding-right: 100%; }
     .sidebar.collapsed .nav__items .dashboards .dash__holder i {
-      padding-left: 40px;
-      padding-right: 110px; }
+      padding-left: 87%;
+      padding-right: 100%; }
     .sidebar.collapsed .nav__items .list__name {
       padding-left: 0; }
       .sidebar.collapsed .nav__items .list__name i {
-        padding-left: 40px;
-        padding-right: 65px; }
+        padding-left: 39%;
+        padding-right: 50%; }
     .sidebar.collapsed .general {
       display: none; }
     .sidebar.collapsed .user__content {
+      padding: 34% 0 34% 25%;
       display: block;
       width: 580px; }
       .sidebar.collapsed .user__content .user__info {
@@ -163,10 +178,8 @@ i.fa-outdent {
         .sidebar .nav__items .list__dash .dash__holder img {
           padding-left: 70px; }
         .sidebar .nav__items .list__dash .dash__holder i {
-          font-size: 24px;
           padding-right: 5px; }
       .sidebar .nav__items .list__dash .fa-tachometer {
-        font-size: 32px;
         padding-right: 20px; }
       .sidebar .nav__items .list__dash li {
         height: 45px;
@@ -192,8 +205,8 @@ i.fa-outdent {
         border-left: 8px solid #46c1fa; }
         .sidebar .nav__items .list__dash.active .dash__holder i {
           font-size: 32px;
-          padding-left: 30px;
-          padding-right: 55px; }
+          padding-left: 10%;
+          padding-right: 15%; }
 
 main {
   width: 76.7%;
@@ -234,7 +247,8 @@ main {
         main .table__header .table__header__nav .table__nav .table__nav-button {
           display: inline-block;
           width: 15px;
-          height: 15px; }
+          height: 15px;
+          cursor: pointer; }
           main .table__header .table__header__nav .table__nav .table__nav-button img {
             color: grey;
             width: 100%;

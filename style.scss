@@ -3,6 +3,20 @@ tr, td {
   //width: 150px;
 }
 
+ul, li {
+  cursor: pointer;
+}
+
+.dash__holder:hover {
+  background-color: #4b6378;
+}
+
+li:hover {
+
+  background-color: #4b6378;
+
+}
+
 body {
   padding-top: 80px;
 }
@@ -75,8 +89,8 @@ i.fa-outdent {
   color: white;
   font-size: 34px;
   letter-spacing: 5px;
-  padding-top: 25px;
-  padding-left: 30px;
+  padding-top: 1.7%;
+  padding-left: 2.5%;
   height: 80px;
   width: 23.3%;
   background: #253340;
@@ -84,7 +98,7 @@ i.fa-outdent {
   transition: 0.2s;
 
   &.collapsed {
-    padding-left: 50px;
+    padding-left: 3.5%;
     letter-spacing: 70px;
     width: 8.8%;
   }
@@ -105,7 +119,7 @@ i.fa-outdent {
     width: 8.8%;
 
     .dash__holder {
-      padding-left: 0px;
+      padding-left: 0;
       padding-right: 65px;
 
       i {
@@ -117,16 +131,22 @@ i.fa-outdent {
 
       .dashboards {
 
-
         &.active {
           height: 70px;
+
+          i {
+            font-size: 32px;
+            padding-left: 76%;
+            padding-top: 36%;
+            padding-right: 100%;
+          }
         }
 
         .dash__holder {
 
           i {
-            padding-left: 40px;
-            padding-right: 110px;
+            padding-left: 87%;
+            padding-right: 100%;
           }
         }
       }
@@ -135,8 +155,8 @@ i.fa-outdent {
         padding-left: 0;
 
         i {
-          padding-left: 40px;
-          padding-right: 65px;
+          padding-left: 39%;
+          padding-right: 50%;
         }
       }
     }
@@ -146,6 +166,7 @@ i.fa-outdent {
     }
 
     .user__content {
+      padding: 34% 0 34% 25%;
       display: block;
       width: 580px;
 
@@ -241,13 +262,13 @@ i.fa-outdent {
         }
 
         i {
-          font-size: 24px;
+          //font-size: 24px;
           padding-right: 5px;
         }
       }
 
       .fa-tachometer {
-        font-size: 32px;
+        //font-size: 32px;
         padding-right: 20px;
       }
 
@@ -290,8 +311,10 @@ i.fa-outdent {
 
         i {
           font-size: 32px;
-          padding-left: 30px;
-          padding-right: 55px;
+          padding-left: 10%;
+          padding-right: 15%;
+          //padding-left: 30px;
+          //padding-right: 55px;
         }
       }
     }
@@ -346,6 +369,7 @@ main {
           display: inline-block;
           width: 15px;
           height: 15px;
+          cursor: pointer;
 
           img {
             color: grey;
