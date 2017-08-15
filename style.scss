@@ -27,7 +27,6 @@ i.fa-outdent {
   cursor: pointer;
 }
 
-
 .main__header {
   display: inline-flex;
   justify-content: space-between;
@@ -165,7 +164,6 @@ i.fa-outdent {
       .fa-tachometer {
         font-size: 32px;
         padding-right: 20px;
-
       }
 
       li {
@@ -174,11 +172,8 @@ i.fa-outdent {
         font-size: 18px;
         line-height: 44px;
 
-
-
         i {
           font-size: 18px;
-
 
           &.pink {
             color: #f16192;
@@ -214,7 +209,6 @@ i.fa-outdent {
         }
       }
     }
-
   }
 }
 
@@ -250,28 +244,29 @@ main {
       vertical-align: top;
       border-left: 1px solid lightgrey;
 
-        .table__nav {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 80px;
-          float: right;
+      .table__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80px;
+        float: right;
 
-          .table__nav-button {
-            display: inline-block;
-            width: 15px;
-            height: 15px;
+        .table__nav-button {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
 
-            img {
-              color: grey;
-              width: 100%;
-              height: 100%;
-            }
+          img {
+            color: grey;
+            width: 100%;
+            height: 100%;
+          }
 
         }
       }
     }
   }
+
   .table__wrapper {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 5px 0 rgba(12, 6, 14, 0.1);
@@ -292,8 +287,6 @@ main {
         color: #777777;
         font-size: 15px;
         text-align: center;
-
-
 
         &:first-child {
           padding-left: 2px;
