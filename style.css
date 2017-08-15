@@ -25,11 +25,11 @@ i.fa-outdent {
   border-radius: 50%;
   font-size: 22px;
   top: 24px;
-  left: 22%;
+  left: 296px;
   cursor: pointer;
   transition: 0.2s; }
   i.fa-outdent.collapsed {
-    left: 7.4%;
+    left: 102px;
     transform: rotateZ(180deg); }
 
 .main__header {
@@ -37,14 +37,14 @@ i.fa-outdent {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 76.7%;
+  width: calc(100% - 314px);
   height: 80px;
   padding: 0 8px 0 40px;
   color: white;
   background: #4a868c;
   transition: 0.2s; }
   .main__header.collapsed {
-    width: 91.2%; }
+    width: calc(100% - 120px); }
   .main__header a {
     color: white; }
   .main__header .period__wrapper {
@@ -68,25 +68,27 @@ i.fa-outdent {
   padding-top: 1.7%;
   padding-left: 2.5%;
   height: 80px;
-  width: 23.3%;
+  width: 314px;
   background: #253340;
   display: inline-block;
   transition: 0.2s; }
   .company__title.collapsed {
     padding-left: 3.5%;
     letter-spacing: 70px;
-    width: 8.8%; }
+    width: 120px;
+    min-width: 120px; }
 
 .company__title:first-letter {
   color: #ed553c; }
 
 .sidebar {
   position: absolute;
-  width: 23.3%;
+  width: 314px;
   background: #253340;
   transition: 0.2s; }
   .sidebar.collapsed {
-    width: 8.8%; }
+    width: 120px;
+    min-width: 120px; }
     .sidebar.collapsed .dash__holder {
       padding-left: 0;
       padding-right: 65px; }
@@ -209,13 +211,13 @@ i.fa-outdent {
           padding-right: 15%; }
 
 main {
-  width: 76.7%;
-  margin-left: 23.3%;
+  width: calc(100% - 314px);
+  margin-left: 314px;
   padding: 20px 20px 0 26px;
   display: inline-block; }
   main.collapsed {
-    width: 91.2%;
-    margin-left: 8.8%; }
+    width: calc(100% - 120px);
+    margin-left: 120px; }
   main .table__header {
     height: 54px;
     margin-top: 4px;
