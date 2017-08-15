@@ -117,6 +117,7 @@ i.fa-outdent {
 
       .dashboards {
 
+
         &.active {
           height: 70px;
         }
@@ -230,6 +231,7 @@ i.fa-outdent {
     .list__dash {
       height: 60px;
       overflow: hidden;
+      transition: 0.5s;
 
       .dash__holder {
         white-space: nowrap;
@@ -288,6 +290,7 @@ i.fa-outdent {
 
         i {
           font-size: 32px;
+          padding-left: 30px;
           padding-right: 55px;
         }
       }

@@ -156,7 +156,8 @@ i.fa-outdent {
       overflow: hidden; }
     .sidebar .nav__items .list__dash {
       height: 60px;
-      overflow: hidden; }
+      overflow: hidden;
+      transition: 0.5s; }
       .sidebar .nav__items .list__dash .dash__holder {
         white-space: nowrap; }
         .sidebar .nav__items .list__dash .dash__holder img {
@@ -191,6 +192,7 @@ i.fa-outdent {
         border-left: 8px solid #46c1fa; }
         .sidebar .nav__items .list__dash.active .dash__holder i {
           font-size: 32px;
+          padding-left: 30px;
           padding-right: 55px; }
 
 main {
