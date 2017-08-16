@@ -380,7 +380,6 @@ main {
           cursor: pointer;
 
           img {
-            color: grey;
             width: 100%;
             height: 100%;
           }
@@ -460,17 +459,38 @@ main {
 }
 
 @media (max-width: 1070px) {
-  .column__title {
-    font-size: 1px;
-    background-color: red;
-  }
-  .cell {
-    font-size: 13px;
-  }
+main {
+  .table__wrapper {
+    .main__table {
 
-  td {
-    font-size: 1px;
+      .column__title {
+        font-size: 10px;
+      }
+
+      .cell {
+        font-size: 12px;
+      }
+    }
   }
+}
+
   //with collapsed sidebar
 
+}
+
+@media (max-width: 900px){
+  main {
+    .table__wrapper {
+      .main__table {
+
+        .column__title {
+          font-size: 8px;
+        }
+
+        .cell {
+          font-size: 10px;
+        }
+      }
+    }
+  }
 }
