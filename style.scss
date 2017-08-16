@@ -439,10 +439,12 @@ main {
       width: calc(100% - 40px);
 
       .good__00 {
+        width: 40px;
         background: url("img/good__00.png") center no-repeat;
       }
 
       .good__01 {
+        width: 40px;
         background: url("img/good__01.png") center no-repeat;
       }
 
@@ -510,5 +512,26 @@ main {
         }
       }
     }
+  }
+}
+
+@media (max-width: 840px) {
+  .to__hide {
+    display: none;
+  }
+  main .table__wrapper .main__table {
+    margin: 0px 40px;
+
+    .cell {
+      font-size: 13px;
+    }
+  }
+
+  main .table__header .table__header__recent {
+    width: 40%;
+  }
+
+  main .table__header .table__header__nav {
+    width: 60%;
   }
 }
