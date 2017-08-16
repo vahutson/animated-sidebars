@@ -1,4 +1,5 @@
 body {
+  height: 100%;
   padding-top: 80px;
 }
 
@@ -106,8 +107,31 @@ i.fa-outdent {
 .sidebar {
   position: absolute;
   width: 314px;
+  height: 100%;
   background: #253340;
   transition: 0.2s;
+
+  .message {
+    position: relative;
+
+    .message-counter {
+      position: absolute;
+      right: 10%;
+      top: 45%;
+      width: 27px;
+      height: 21px;
+      border-radius: 10px;
+      background: #ef4b8f;
+      color: #fff;
+
+      span {
+        font-size: 13px;
+        position: absolute;
+        top: -24px;
+        left: 6px;
+      }
+    }
+  }
 
   &.collapsed {
     overflow: hidden;
@@ -119,6 +143,28 @@ i.fa-outdent {
 
       i {
         padding-right: 55px;
+      }
+    }
+
+    .message {
+      position: relative;
+
+      .message-counter {
+        position: absolute;
+        right: 28%;
+        top: 32%;
+        width: 24px;
+        height: 17px;
+        border-radius: 10px;
+        background: #ef4b6e;
+        color: #fff;
+
+        span {
+          font-size: 11px;
+          position: absolute;
+          top: -26px;
+          left: 5px;
+        }
       }
     }
 
@@ -140,9 +186,7 @@ i.fa-outdent {
           i {
             padding-left: 87%;
             padding-right: 100%;
-
           }
-
         }
 
         .list__name {
@@ -161,8 +205,6 @@ i.fa-outdent {
     }
 
     .user__content {
-      //display: block;
-      //width: 580px;
 
       .user__info {
         opacity: 0;
@@ -177,7 +219,6 @@ i.fa-outdent {
   height: 142px;
   background: rgba(74, 135, 140, 1);
   background: -moz-linear-gradient(top, rgba(74, 135, 140, 1) 0%, rgba(119, 107, 145, 1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(74, 135, 140, 1)), color-stop(100%, rgba(119, 107, 145, 1)));
   background: -webkit-linear-gradient(top, rgba(74, 135, 140, 1) 0%, rgba(119, 107, 145, 1) 100%);
   background: -o-linear-gradient(top, rgba(74, 135, 140, 1) 0%, rgba(119, 107, 145, 1) 100%);
   background: -ms-linear-gradient(top, rgba(74, 135, 140, 1) 0%, rgba(119, 107, 145, 1) 100%);
@@ -243,6 +284,7 @@ i.fa-outdent {
     height: 70px;
     white-space: nowrap;
     overflow: hidden;
+
   }
 
   .list__dash {
@@ -435,37 +477,38 @@ main {
       }
     }
   }
+}
 
-  @media (max-width: 1070px) {
-    main {
-      .table__wrapper {
-        .main__table {
+@media (max-width: 1070px) {
+  main {
+    .table__wrapper {
+      .main__table {
 
-          .column__title {
-            font-size: 10px;
-          }
+        .column__title {
+          font-size: 10px;
+        }
 
-          .cell {
-            font-size: 12px;
-          }
+        .cell {
+          font-size: 12px;
         }
       }
     }
   }
+}
 
-  @media (max-width: 900px) {
-    main {
-      .table__wrapper {
-        .main__table {
+@media (max-width: 900px) {
+  main {
+    .table__wrapper {
+      .main__table {
 
-          .column__title {
-            font-size: 8px;
-          }
+        .column__title {
+          font-size: 8px;
+        }
 
-          .cell {
-            font-size: 10px;
-          }
+        .cell {
+          font-size: 10px;
         }
       }
     }
   }
+}

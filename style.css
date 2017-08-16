@@ -1,4 +1,5 @@
 body {
+  height: 100%;
   padding-top: 80px; }
 
 ul, li {
@@ -84,8 +85,25 @@ i.fa-outdent {
 .sidebar {
   position: absolute;
   width: 314px;
+  height: 100%;
   background: #253340;
   transition: 0.2s; }
+  .sidebar .message {
+    position: relative; }
+    .sidebar .message .message-counter {
+      position: absolute;
+      right: 10%;
+      top: 45%;
+      width: 27px;
+      height: 21px;
+      border-radius: 10px;
+      background: #ef4b8f;
+      color: #fff; }
+      .sidebar .message .message-counter span {
+        font-size: 13px;
+        position: absolute;
+        top: -24px;
+        left: 6px; }
   .sidebar.collapsed {
     overflow: hidden;
     width: 120px; }
@@ -94,6 +112,22 @@ i.fa-outdent {
       padding-right: 65px; }
       .sidebar.collapsed .dash__holder i {
         padding-right: 55px; }
+    .sidebar.collapsed .message {
+      position: relative; }
+      .sidebar.collapsed .message .message-counter {
+        position: absolute;
+        right: 28%;
+        top: 32%;
+        width: 24px;
+        height: 17px;
+        border-radius: 10px;
+        background: #ef4b6e;
+        color: #fff; }
+        .sidebar.collapsed .message .message-counter span {
+          font-size: 11px;
+          position: absolute;
+          top: -26px;
+          left: 5px; }
     .sidebar.collapsed .nav__items .dashboards.active {
       height: 70px; }
       .sidebar.collapsed .nav__items .dashboards.active i {
@@ -119,7 +153,6 @@ i.fa-outdent {
   height: 142px;
   background: #4a878c;
   background: -moz-linear-gradient(top, #4a878c 0%, #776b91 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #4a878c), color-stop(100%, #776b91));
   background: -webkit-linear-gradient(top, #4a878c 0%, #776b91 100%);
   background: -o-linear-gradient(top, #4a878c 0%, #776b91 100%);
   background: -ms-linear-gradient(top, #4a878c 0%, #776b91 100%);
@@ -278,20 +311,20 @@ main {
         font-size: 15px;
         text-align: center;
         padding: 0 4px; }
-  main .table__column-titles {
-    height: 48px;
-    color: #949393;
-    font-weight: bold; }
-    main .table__column-titles .column__title {
-      white-space: nowrap;
-      border-bottom: 1px solid lightgrey;
-      text-transform: uppercase;
-      font-size: 12px;
-      text-align: center; }
-      main .table__column-titles .column__title:first-child {
-        padding-left: 0; }
-      main .table__column-titles .column__title:last-child {
-        padding-right: 0; }
+    main .table__wrapper .table__column-titles {
+      height: 48px;
+      color: #949393;
+      font-weight: bold; }
+      main .table__wrapper .table__column-titles .column__title {
+        white-space: nowrap;
+        border-bottom: 1px solid lightgrey;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-align: center; }
+        main .table__wrapper .table__column-titles .column__title:first-child {
+          padding-left: 0; }
+        main .table__wrapper .table__column-titles .column__title:last-child {
+          padding-right: 0; }
 
 @media (max-width: 1070px) {
   main .table__wrapper .main__table .column__title {
