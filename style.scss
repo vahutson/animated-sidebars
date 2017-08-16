@@ -516,14 +516,46 @@ main {
 }
 
 @media (max-width: 840px) {
+
+  .main__header {
+    .period__wrapper {
+
+      .period__choose{
+
+
+    }
+  }
+ .header__nav {
+   display: none;
+ }}
+
   .to__hide {
     display: none;
   }
-  main .table__wrapper .main__table {
-    margin: 0px 40px;
 
-    .cell {
-      font-size: 13px;
+  .period__title {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+  main {
+    width: 100%;
+    margin-left: 0;
+    &.collapsed {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .table__wrapper {
+      .main__table {
+        margin: 0 40px;
+
+        .cell {
+          font-size: 13px;
+        }
+      }
     }
   }
 
@@ -535,3 +567,8 @@ main {
     width: 60%;
   }
 }
+
+
+
+
+

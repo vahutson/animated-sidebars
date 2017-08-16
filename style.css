@@ -339,13 +339,28 @@ main {
   main .table__wrapper .main__table .cell {
     font-size: 10px; } }
 @media (max-width: 840px) {
+  .main__header .header__nav {
+    display: none; }
+
   .to__hide {
     display: none; }
 
-  main .table__wrapper .main__table {
-    margin: 0px 40px; }
-    main .table__wrapper .main__table .cell {
-      font-size: 13px; }
+  .period__title {
+    display: none; }
+
+  .sidebar {
+    display: none; }
+
+  main {
+    width: 100%;
+    margin-left: 0; }
+    main.collapsed {
+      width: 100%;
+      margin-left: 0; }
+    main .table__wrapper .main__table {
+      margin: 0 40px; }
+      main .table__wrapper .main__table .cell {
+        font-size: 13px; }
 
   main .table__header .table__header__recent {
     width: 40%; }

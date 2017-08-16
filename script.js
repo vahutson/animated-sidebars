@@ -15,7 +15,32 @@ var dashBoard = document.getElementsByClassName('dashboards')[0];
 dashBoard.addEventListener('click', activate);
 toggleButton.addEventListener('click', collapse);
 
+
+window.onload = function mob() {
+    if (window.innerWidth < 755) {
+        toggleButton.classList.add('collapsed');
+        sidebar.classList.add('collapsed');
+        companyTitle.classList.add('collapsed');
+        mainHeader.classList.add('collapsed');
+        main.classList.add('collapsed');
+        for (var i = 0; i < cell.length; i++) {
+            cell[i].classList.add('collapsed');
+        }
+
+        if (collapsed === false) {
+            collapsed = true;
+        } else collapsed = false;
+    }
+}
+
+
 function collapse() {
+    if (sidebar.classList.contains('collapsed') && window.innerWidth < 755) {
+        sidebar.style.display = 'block';
+    } else if (window.innerWidth < 755){
+        sidebar.style.display = 'none';
+    }
+
     toggleButton.classList.toggle('collapsed');
     sidebar.classList.toggle('collapsed');
     companyTitle.classList.toggle('collapsed');
