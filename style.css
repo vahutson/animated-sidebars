@@ -1,3 +1,6 @@
+body {
+  padding-top: 80px; }
+
 ul, li {
   cursor: pointer; }
 
@@ -6,9 +9,6 @@ ul, li {
 
 li:hover {
   background-color: #4b6378; }
-
-body {
-  padding-top: 80px; }
 
 header {
   position: fixed;
