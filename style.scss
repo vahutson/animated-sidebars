@@ -20,6 +20,16 @@ header {
   top: 0;
   width: 100%;
   z-index: 1;
+
+  .user__pic__header {
+    display: none;
+    position: absolute;
+    right: 5%;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: url("img/user__pic.png");
+  }
 }
 
 i.fa-outdent {
@@ -516,7 +526,9 @@ main {
 }
 
 @media (max-width: 840px) {
-
+body {
+  background-color: #1d5065;
+}
   .main__header {
     .period__wrapper {
 
@@ -537,9 +549,7 @@ main {
     display: none;
   }
 
-  .sidebar {
-    display: none;
-  }
+
   main {
     width: 100%;
     margin-left: 0;

@@ -16,6 +16,14 @@ header {
   top: 0;
   width: 100%;
   z-index: 1; }
+  header .user__pic__header {
+    display: none;
+    position: absolute;
+    right: 5%;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: url("img/user__pic.png"); }
 
 i.fa-outdent {
   position: absolute;
@@ -339,6 +347,9 @@ main {
   main .table__wrapper .main__table .cell {
     font-size: 10px; } }
 @media (max-width: 840px) {
+  body {
+    background-color: #1d5065; }
+
   .main__header .header__nav {
     display: none; }
 
@@ -346,9 +357,6 @@ main {
     display: none; }
 
   .period__title {
-    display: none; }
-
-  .sidebar {
     display: none; }
 
   main {
