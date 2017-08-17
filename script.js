@@ -2,6 +2,8 @@
  * Created by Vasyl on 14.08.2017.
  */
 
+var fader = document.getElementsByClassName('fader')[0];
+fader.addEventListener('click', collapse);
 var toggleButton = document.getElementsByClassName('toggle__button')[0];
 var collapsed = false;
 var sidebar = document.getElementsByClassName('sidebar')[0];
@@ -34,8 +36,10 @@ function mob() {
 
         if (sidebar.classList.contains('collapsed') && window.innerWidth < 840) {
             sidebar.style.display = 'none';
+            fader.style.display = 'none';
         } else if (window.innerWidth < 840) {
             sidebar.style.display = 'block';
+            fader.style.display = 'block';
         }
 
         if (collapsed === false) {
@@ -51,9 +55,11 @@ function collapse() {
     if (sidebar.classList.contains('collapsed') && window.innerWidth < 840) {
         userPic.style.display = 'none'
         sidebar.style.display = 'block';
+        fader.style.display = 'block';
     } else if (window.innerWidth < 840) {
         sidebar.style.display = 'none';
-        userPic.style.display = 'block'
+        userPic.style.display = 'block';
+        fader.style.display = 'none';
     }
 
     toggleButton.classList.toggle('collapsed');
