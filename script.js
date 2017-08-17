@@ -3,32 +3,31 @@
  */
 
 var fader = document.getElementsByClassName('fader')[0];
-fader.addEventListener('click', collapse);
 var toggleButton = document.getElementsByClassName('toggle__button')[0];
 var collapsed = false;
 var sidebar = document.getElementsByClassName('sidebar')[0];
-sidebar.addEventListener('mouseover', overCollapse);
-sidebar.addEventListener('mouseout', outUnCollapse);
 var companyTitle = document.getElementsByClassName('company__title')[0];
 var mainHeader = document.getElementsByClassName('main__header')[0];
 var cell = document.getElementsByClassName('cell');
 var main = document.getElementsByTagName('main')[0];
 var dashBoard = document.getElementsByClassName('dashboards')[0];
 var userPic = document.getElementsByClassName('header__user')[0];
+var nodeArr = [ toggleButton, sidebar, companyTitle, mainHeader, main];
+window.addEventListener('resize', mob);
+sidebar.addEventListener('mouseover', overCollapse);
+sidebar.addEventListener('mouseout', outUnCollapse);
 dashBoard.addEventListener('click', activate);
 toggleButton.addEventListener('click', collapse);
-window.addEventListener('resize', mob);
+fader.addEventListener('click', collapse);
 
 
 window.onload = mob;
 
 function mob() {
     if (window.innerWidth < 840) {
-        toggleButton.classList.add('collapsed');
-        sidebar.classList.add('collapsed');
-        companyTitle.classList.add('collapsed');
-        mainHeader.classList.add('collapsed');
-        main.classList.add('collapsed');
+        for (var j = 0; j < nodeArr.length; j++) {
+            nodeArr[j].classList.add('collapsed');
+        }
         userPic.style.display = 'inline-block';
         for (var i = 0; i < cell.length; i++) {
             cell[i].classList.add('collapsed');
@@ -62,16 +61,14 @@ function collapse() {
         fader.style.display = 'none';
     }
 
-    toggleButton.classList.toggle('collapsed');
-    sidebar.classList.toggle('collapsed');
-    companyTitle.classList.toggle('collapsed');
-    mainHeader.classList.toggle('collapsed');
-    main.classList.toggle('collapsed');
+    for (var j = 0; j < nodeArr.length; j++) {
+        nodeArr[j].classList.toggle('collapsed');
+    }
     for (var i = 0; i < cell.length; i++) {
         cell[i].classList.toggle('collapsed');
     }
 
-    if (collapsed === false) {
+    if (!collapsed) {
         collapsed = true;
     } else collapsed = false;
 }
@@ -81,22 +78,17 @@ function activate() {
 }
 
 function outUnCollapse() {
-    if (collapsed === true) {
-        toggleButton.classList.add('collapsed');
-        sidebar.classList.add('collapsed');
-        companyTitle.classList.add('collapsed');
-        mainHeader.classList.add('collapsed');
-        main.classList.add('collapsed');
+    if (collapsed) {
+        for (var j = 0; j < nodeArr.length; j++) {
+            nodeArr[j].classList.add('collapsed');
+        }
     }
 }
 
 function overCollapse() {
-    if (collapsed === true) {
-        toggleButton.classList.remove('collapsed');
-        sidebar.classList.remove('collapsed');
-        companyTitle.classList.remove('collapsed');
-        mainHeader.classList.remove('collapsed');
-        main.classList.remove('collapsed');
+    if (collapsed) {
+        for (var j = 0; j < nodeArr.length; j++) {
+            nodeArr[j].classList.remove('collapsed');
+        }
     }
-
 }

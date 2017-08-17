@@ -16,7 +16,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1; }
+  z-index: 2; }
   header .header__user {
     display: none;
     position: absolute;
@@ -279,6 +279,7 @@ i.fa-outdent {
 
 main {
   width: calc(100% - 314px);
+  height: 100%;
   margin-left: 314px;
   padding: 20px 20px 0 26px;
   display: inline-block; }
