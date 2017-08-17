@@ -284,6 +284,7 @@ main {
   padding: 20px 20px 0 26px;
   display: inline-block; }
   main .fader {
+    display: none;
     position: absolute;
     width: 100vw;
     height: 100vh;
